@@ -65,6 +65,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
+	    
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+      transaction_id: "T_17935",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "INR",
+      coupon: "REPUBLIC_SALE",
+      items: [
+       {
+        item_id: "SKU_78965",
+        item_name: "Python",
+        affiliation: "Infosys Springboard",
+        index: 0
+       },
+      {
+        item_id: "SKU_45632",
+        item_name: "Web Analytics",
+        affiliation: "Google Analytics Academy",
+        index: 1      
+      }]
+  }
+});
 	    </script>
 	
     <title>Course Page</title>
